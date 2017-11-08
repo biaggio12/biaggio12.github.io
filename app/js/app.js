@@ -4,7 +4,7 @@
 var app = angular.module('myApp', ['ngMaterial','ngAnimate']);
 
 
-    app.controller('appController',function($scope, $rootScope, $mdDialog, $mdSidenav, $log){
+    app.controller('appController',function($scope, $rootScope, $mdDialog, $mdSidenav, $log, $timeout){
 
         this.action = function(name, ev){
             $mdDialog.show($mdDialog.alert()

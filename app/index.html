@@ -36,7 +36,7 @@
           Zadanie
         </button>
         <md-menu-content>
-          <md-button ng-click="ctrl.action('losowanie zadań', $event)">
+          <md-button ng-click="ctrl.action(' losowanie zadań ', $event)">
             Losuj Zadanie
           </md-button>
           <md-button>
@@ -50,10 +50,10 @@
           Tutoriale
         </button>
         <md-menu-content>
-          <md-button>
+          <md-button ng-click="ctrl.action(' tutoriale WM ', $event)">
             Wytrzymałość Materiałów
           </md-button>
-          <md-button>
+          <md-button ng-click="ctrl.action(' tutoriale MT ', $event)">
             Mechanika Teorytyczna
           </md-button>
         </md-menu-content>
@@ -64,20 +64,37 @@
           Dodaj Zadanie
         </button>
         <md-menu-content>
-          <md-button>
-
+          <md-button ng-click="ctrl.action(' dodawanie zadań WM ', $event)">
+            Dodaj zadanie WM
+          </md-button>
+          <md-button ng-click="ctrl.action(' dodawanie zadan MT ', $event)">
+            Dodaj zadanie MT
           </md-button>
         </md-menu-content>
       </md-menu>
 
       <md-menu>
-
+        <button ng-click="$mdMenu.open()">
+          Pomoce naukowe
+        </button>
+        <md-menu-content>
+          <md-button ng-click="ctrl.action(' wzory i wykresy belek ', $event)">
+            Wzory i wykresy belek
+          </md-button>
+          <md-button ng-click="ctrl.action(' stałe materiałowe ', $event)">
+            Stałe materiałowe
+          </md-button>
+          <md-button ng-click="ctrl.action(' kalkulator jednostek ', $event)">
+            Zamiana jednostek
+          </md-button>
+        </md-menu-content>
       </md-menu>
+
     </md-menu-bar>
   </div>
 </md-toolbar>
 
-<md-content layout="column" layout-padding ng-controller="RightCtrl" style="height: 500px">
+<md-content layout="row" layout-padding ng-controller="RightCtrl" style="height: 500px">
   <md-sidenav layout="column" class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
 
     <md-toolbar class="md-theme-light">
@@ -97,6 +114,11 @@
     </md-content>
 
   </md-sidenav>
+  <md-button ng-click="toggleRight()"
+             ng-hide="isOpenRight()"
+             class="md-primary">
+    Toggle right
+  </md-button>
 </md-content>
 
 
