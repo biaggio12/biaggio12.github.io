@@ -1,0 +1,44 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-6 col-lg-offset-3" id="example">
+            <img ng-src="{{path}}" class="img-responsive">
+            <button change-directive type="button" name="random" class="btn btn-lg btn-primary btn-block" ng-click="rollTask()">
+                Losuj belkę
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-6 col-lg-offset-3" id="solved" >
+            <img ng-src="{{pathSolution}}" class="img-responsive" ng-show="showSolution">
+            <button type="button" name="random" class="btn btn-lg btn-primary btn-block" ng-click="toggleSolution()">
+                Pokaż rozwiązanie
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <p>Zadania od 1 do 6 - Wyznacz wykresy M, T</p>
+            <p>zadania 7-8 - Wykresy N,T,M</p>
+            <p>zadania 9-14 - Wykresy M,T </p>
+            <p>zadania 15-18 - Wyznacz ekstrema podanych belek</p>
+            <p>zadania 19-24 - Wykresy M,T + zadania 22-24 podać równania M(x) i T(x)</p>
+            <p>zadania 25-32 dany jest wykres momentów, wyznacz obciążenia i wykres sił tnących</p>
+            <p>zadania 33-37 - Wykresy M,T (belki gerberowskie)</p>
+            <p>Zadania 38-41 - Wykresy M</p>
+            <p>Zadania 42-44 - Wykresy M,T</p>
+            <p>Zadania 45-48 - Wykresy sił wewnętrznych (Belki załamane i zakrzywione)</p>
+            <p>Zadania 49-58 - Wykresy sił wewnętrznych (Belki załamane i zakrzywione)</p>
+            <p>Zadania 68-87 - Wykresy sił wewnętrznych M,N,T (Ramy)</p>
+        </div>
+    </div>
+</div>
+<div class="image-rotator"><div class="rotator-slide" id="rotator-slide-1"><a href="http://www.darmowylicznik.pl/" title="Przejdź na stronę licznika" target="_blank"><img src="http://www.darmowylicznik.pl/licznik.php?id=129944" alt="Darmowy licznik odwiedzin" style="border:0px;" /></a></div></div>
